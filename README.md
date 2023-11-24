@@ -10,9 +10,9 @@
 ![](https://img.shields.io/badge/jwt-✓-blue.svg)
 ![](https://img.shields.io/badge/openapi_3-✓-blue.svg)
 
-# Resum
+# Description
 
-Service for the registration, deletion and consultation of users using tokens for the security of the application 
+Service for the registration, delete and search of users using tokens for the security of the application 
 
 # Diagram Solution
 
@@ -267,7 +267,7 @@ Result Expected
 [INFO]
 [INFO]
 [INFO] --- maven-jar-plugin:3.2.2:jar (default-jar) @ nisum-prj ---
-[INFO] Building jar: D:\NisumCode\ruben\nisum-prj\target\nisum-prj-0.0.1-SNAPSHOT.jar
+[INFO] Building jar: D:\NisumCode\code\nisum-prj\target\nisum-prj-0.0.1-SNAPSHOT.jar
 [INFO]
 [INFO] --- spring-boot-maven-plugin:2.6.13:repackage (repackage) @ nisum-prj ---
 [INFO] Replacing main artifact with repackaged archive
