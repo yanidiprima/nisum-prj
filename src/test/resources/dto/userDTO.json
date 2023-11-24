@@ -1,0 +1,13 @@
+{
+  "name": "User Example",
+  "username": "Example",
+  "email": "userexample@email.com.cl",
+  "password": "example123456",
+  "phones": [
+    {
+      "numberPhone": "+54236598",
+      "cityCode": "BUE",
+      "countryCode": "AR"
+    }
+  ]
+}

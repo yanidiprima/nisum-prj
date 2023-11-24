@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:nisum;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: root
+    password: root
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  tomcat:
+    max-wait: 20000
+    max-active: 50
+    max-idle: 20
+    min-idle: 15
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+        id:
+          new_generator_mappings: false
+  mvc:
+    pathmatch:
+      marching-strategy: ant_path_matcher
+
+server:
+   port: 8085
+
+security:
+  jwt:
+    token:
+      secret-key: secret-key
+      expire-length: 3600000
+      
+UserController:
+  login: Authenticates user and returns its JWT token.
+  register: Creates user and returns its JWT token
+  delete: Deletes specific user by username
+  search: Returns specific user by username
+  update: Update information about the user
+
+springdoc:
+  paths-to-exclude: /swagger-resources/**
+
+regex:
+   pattern: ^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}+.cl$
